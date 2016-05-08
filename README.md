@@ -6,5 +6,5 @@ it will be on port 8765 (per the `application.yml`). Also run [eureka server](ht
 and [spring-cloud-netflix](https://github.com/eacarvalho/spring-cloud-netflix.git).  
 
 You should then be able to view json content from 
-`http://localhost:7070/hello` and `http://eduardo.local:8765/spring-cloud-netflix/hello` which are
+`http://localhost:7070/hello` and `http://localhost:8765/spring-cloud-netflix/hello` which are
 configured in `application.yml` as proxy routes.
