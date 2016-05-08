@@ -1,0 +1,28 @@
+info:
+  component: Zuul Server
+  
+endpoints:
+  restart:
+    enabled: true
+  shutdown:
+    enabled: true
+  health:
+    sensitive: false
+
+zuul:
+  routes:
+    spring-cloud-netflix:
+      path: /spring-cloud-netflix/**
+      instanceId: spring-cloud-netflix
+
+server:
+  port: 8765
+
+spring:
+  service:
+    name: spring-cloud-zuul-server
+
+logging:
+  level:
+    ROOT: INFO
+    org.springframework.web: DEBUG
